@@ -120,3 +120,35 @@ footer {
     margin-top: 5px;
     height: 5vh;
 }
+
+@media (max-width:767px) {
+    #asideArticle {
+        background-color: gold;
+        flex-direction: column;
+    }
+
+    aside {
+        height: 20vh;
+    }
+    .asideDiv {
+        height: 4vh;
+    }
+    
+    article {
+        height: 55vh;
+    }
+    
+    .articleDivs1 {
+        background-color: rgb(92, 75, 246);
+        width: 48%;
+        height: 14vh;
+        margin: 8px 8px 0px 8px;
+    }
+    
+    .articleDiv2 {
+        background-color: rgb(147, 136, 246);
+        height: 5vh;
+        margin: 16px 8px 0px 8px;
+    }
+}
+
