@@ -78,8 +78,8 @@ aside {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-
 }
+
 .asideDiv {
     background-color: rgb(251, 251, 142);
     height: 5vh;
@@ -152,3 +152,79 @@ footer {
     }
 }
 
+@media (max-width:480px) {
+    #headerNav {
+        height: 30vh;
+    }    
+
+    #asideArticle {
+        border: solid 4px gold;
+        flex-direction: column;
+        
+    }
+
+    header {
+        background-color: blue;
+        flex-direction: column;
+        height: 60%;
+    }
+    
+    .headerDiv1 {
+        height: 10px;
+        width: 97%;
+        margin: 7px;
+        flex-grow: 1;
+    }
+
+    .headerDiv2 {
+        height: 10px;
+        width: 97%;
+        margin: 7px;
+        flex-grow: 1;
+    }
+
+    nav {
+        height: 20%;
+    }
+
+    aside {
+        height: 15vh;
+        background-color: rgb(249, 134, 62);
+        justify-content: center;
+    }
+
+    .asideDiv {
+        background-color: rgb(253, 193, 156);
+        height: 4vh;
+        margin: 0 auto;
+        margin: 4px 8px 4px 8px;
+    }
+    
+    article {
+        background-color: rgb(15, 72, 126);
+        height: 60vh;
+    }
+
+    .cajaArticle {
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 37%;
+        justify-content: space-evenly;
+    }
+
+    .articleDivs1 {
+        background-color: rgb(119, 172, 222);
+        width: 95%;
+        height: 5vh;
+    }
+
+    .articleDiv2 {
+        background-color: rgb(199, 223, 246);
+    }
+
+    footer {
+        background-color: rgb(249, 217, 111);
+        border: solid 12px black; 
+    }
+
+}
