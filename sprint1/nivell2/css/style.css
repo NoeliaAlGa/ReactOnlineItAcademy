@@ -1,0 +1,310 @@
+main {
+    max-width: 1200px;
+    min-width: 162px;
+}
+
+body {
+    font-family: sans-serif;
+    height: 95vh;
+}
+
+#headerNav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    margin: 0 auto;
+    width: 100%;
+    background-image: url(/sprint1/nivell2/img\ japo/header.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#imgFondo{
+    height: 100%;
+}
+
+header {
+    margin: 0 auto;
+    margin: 8px;
+    display: flex;
+    height: 14vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 100%;
+    margin: 7px 7px 4px 7px;
+    flex-grow: 1;
+}
+
+.imgLogo {
+    height: 100%;
+}
+
+nav {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    height: 50%;
+    display: flex;
+    flex-grow: 4;
+    list-style-type:none;
+    margin: 0;
+    padding:0;
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.imgMenu {
+    height: 20px;
+}
+
+li {
+    margin: 0 auto;
+    color: rgb(128, 128, 128);
+}
+
+li:hover {
+    margin: 0 auto;
+    color: rgb(238, 116, 99);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.imgSocial {
+    height: 30%;
+    margin: 0px 5px;
+}
+
+.imgSocial:hover {
+    cursor: pointer;
+    background-color: rgb(238, 116, 99);
+    border: rgb(238, 116, 99) solid 2px;
+    border-radius: 10%;
+}
+
+#textHeader {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 35%;
+    width: 80%;
+    color: rgb(238, 116, 99, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+#asideArticle {
+    background-color: black;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    display: flex;
+    height: 65vh;
+    padding: 2px;
+}
+
+aside {
+    background-color: red;
+    order: 1;
+    flex-grow: 2;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.asideDiv {
+    background-color: rgb(251, 251, 142);
+    height: 5vh;
+    margin: 0 auto;
+    margin: 11px 8px 0px 8px;
+}
+
+
+article {
+    background-color: rgb(44, 42, 96);
+    flex-grow: 4;
+    margin: 5px;
+}
+
+.cajaArticle {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 3px;
+    justify-content: center;
+}
+
+.articleDivs1 {
+    background-color: rgb(92, 75, 246);
+    width: 48%;
+    height: 22vh;
+    margin: 8px 8px 0px 8px;
+}
+
+.articleDiv2 {
+    background-color: rgb(147, 136, 246);
+    height: 5vh;
+    margin: 16px 8px 0px 8px;
+}
+
+footer {
+    background-color: gold;
+    border: solid 7px black;
+    margin-top: 5px;
+    height: 5vh;
+}
+
+@media (max-width:767px) {
+    #asideArticle {
+        background-color: gold;
+        flex-direction: column;
+    }
+
+    aside {
+        height: 20vh;
+    }
+    .asideDiv {
+        height: 4vh;
+    }
+    
+    article {
+        height: 55vh;
+    }
+    
+    .articleDivs1 {
+        background-color: rgb(92, 75, 246);
+        width: 48%;
+        height: 14vh;
+        margin: 8px 8px 0px 8px;
+    }
+    
+    .articleDiv2 {
+        background-color: rgb(147, 136, 246);
+        height: 5vh;
+        margin: 16px 8px 0px 8px;
+    }
+}
+
+@media (max-width:480px) {
+    #headerNav {
+        height: 45vh;
+    }  
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+    }
+    
+    .logo {
+        height: 45%;
+        margin-bottom: 10px;
+    }
+    
+    .imgLogo {
+        height: 100%;
+    }
+    
+    .menu {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .imgMenu {
+        height: 100%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+    .imgMenu:hover {
+        background-color: rgb(238, 116, 99);
+        border: rgb(238, 116, 99) solid 2px;
+        border-radius: 10%;
+    }
+    
+    li {
+        color: rgb(128, 128, 128, 0);
+    }
+
+    li:hover {
+        color: rgb(238, 116, 99,0);
+    }
+    
+    .social {
+        width: 90%;
+        height: 10vh;
+        justify-content: space-between;
+    }
+    
+    #textHeader {
+        font-size: 11px;
+    }
+
+    #asideArticle {
+        border: solid 4px gold;
+        flex-direction: column;
+    }
+
+    nav {
+        height: 20%;
+    }
+
+    aside {
+        height: 15vh;
+        background-color: rgb(249, 134, 62);
+        justify-content: center;
+    }
+
+    .asideDiv {
+        background-color: rgb(253, 193, 156);
+        height: 4vh;
+        margin: 0 auto;
+        margin: 4px 8px 4px 8px;
+    }
+    
+    article {
+        background-color: rgb(15, 72, 126);
+        height: 60vh;
+    }
+
+    .cajaArticle {
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 37%;
+        justify-content: space-evenly;
+    }
+
+    .articleDivs1 {
+        background-color: rgb(119, 172, 222);
+        width: 95%;
+        height: 5vh;
+    }
+
+    .articleDiv2 {
+        background-color: rgb(199, 223, 246);
+    }
+
+    footer {
+        background-color: rgb(249, 217, 111);
+        border: solid 12px black; 
+    }
+
+}
