@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     height: 40vh;
-    margin: 0 auto;
+    margin: 5px;
     width: 100%;
     background-image: url(/sprint1/nivell2/img\ japo/header.jpg);
     background-size: cover;
@@ -113,36 +113,38 @@ li:hover {
 }
 
 #asideArticle {
-    background-color: black;
     margin-top: 4px;
     margin-bottom: 2px;
     display: flex;
-    height: 65vh;
-    padding: 2px;
 }
 
 aside {
-    background-color: red;
+    background-color: rgb(0, 0, 0, 0.2);
     order: 1;
-    flex-grow: 2;
-    margin: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    width: 300px;
+    margin: 5px 0px 5px 5px;
+    flex-grow: 1;
 }
 
-.asideDiv {
-    background-color: rgb(251, 251, 142);
-    height: 5vh;
-    margin: 0 auto;
+.asideTitulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
     margin: 11px 8px 0px 8px;
 }
 
+.asideText {
+    text-align: center;
+    font-size: 12px;
+    margin: 8px;
+}
 
 article {
-    background-color: rgb(44, 42, 96);
-    flex-grow: 4;
-    margin: 5px;
+    background-color: rgb(0, 0, 0, 0.2);
+    margin: 5px 5px 5px 0px;
+    width: 100%;
+    justify-content: space-between;
+    flex-grow: 3;
 }
 
 .cajaArticle {
@@ -150,56 +152,85 @@ article {
     margin: 0 auto;
     padding-top: 3px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .articleDivs1 {
-    background-color: rgb(92, 75, 246);
-    width: 48%;
-    height: 22vh;
+    background-color: rgb(239, 237, 237);
+    width: 45%;
     margin: 8px 8px 0px 8px;
+    justify-content: center;
+    border: 5px solid rgb(239, 237, 237);
+    height: fit-content
+}
+
+.articleImg {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    
+}
+
+.articleTitulo {
+    background-color: rgb(238, 116, 99, 0.9);
+    height: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    margin: 0 auto;
+    padding-left: 3px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.articleTexto{
+    column-count: 2;
+    margin-top: 3px;
+    padding: 3px;
+    font-size: 10px;
+    text-align: justify;
+}
+
+.articleLeerMas {
+    font-size: 10px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.articleLeerMas:hover {
+    color: rgb(238, 116, 99); 
 }
 
 .articleDiv2 {
-    background-color: rgb(147, 136, 246);
-    height: 5vh;
     margin: 16px 8px 0px 8px;
+    font-size: 9px;
+    text-align:center
 }
 
 footer {
-    background-color: gold;
-    border: solid 7px black;
+    background-color: rgb(239, 237, 237);
+    border-left: 5px solid rgb(0, 0, 0, 0.3);
+    border-right: 5px solid rgb(0, 0, 0, 0.3);
     margin-top: 5px;
     height: 5vh;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width:767px) {
     #asideArticle {
-        background-color: gold;
+        width: 100%;
+        height: 100%;
         flex-direction: column;
     }
 
-    aside {
-        height: 20vh;
-    }
-    .asideDiv {
-        height: 4vh;
-    }
-    
-    article {
-        height: 55vh;
-    }
-    
     .articleDivs1 {
-        background-color: rgb(92, 75, 246);
-        width: 48%;
-        height: 14vh;
-        margin: 8px 8px 0px 8px;
+        height: fit-content;
     }
-    
-    .articleDiv2 {
-        background-color: rgb(147, 136, 246);
-        height: 5vh;
-        margin: 16px 8px 0px 8px;
+
+    aside {
+        width: 100%;
     }
 }
 
@@ -256,55 +287,32 @@ footer {
     
     #textHeader {
         font-size: 11px;
-    }
-
-    #asideArticle {
-        border: solid 4px gold;
-        flex-direction: column;
+        height: 50px;
     }
 
     nav {
         height: 20%;
     }
 
-    aside {
-        height: 15vh;
-        background-color: rgb(249, 134, 62);
-        justify-content: center;
-    }
-
-    .asideDiv {
-        background-color: rgb(253, 193, 156);
-        height: 4vh;
-        margin: 0 auto;
-        margin: 4px 8px 4px 8px;
-    }
-    
-    article {
-        background-color: rgb(15, 72, 126);
-        height: 60vh;
+    #asideArticle {
+        margin-right: 5px;
     }
 
     .cajaArticle {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         flex-direction: column;
-        height: 37%;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     .articleDivs1 {
-        background-color: rgb(119, 172, 222);
-        width: 95%;
-        height: 5vh;
+        width: 94%; 
     }
 
-    .articleDiv2 {
-        background-color: rgb(199, 223, 246);
+    .articleTitulo {
+        margin-top: -5px;
     }
 
-    footer {
-        background-color: rgb(249, 217, 111);
-        border: solid 12px black; 
-    }
+
+
 
 }
