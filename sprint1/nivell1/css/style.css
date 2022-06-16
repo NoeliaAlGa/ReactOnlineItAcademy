@@ -1,0 +1,230 @@
+main {
+    max-width: 1200px;
+    min-width: 162px;
+}
+
+body {
+    font-family: sans-serif;
+    height: 95vh;
+}
+
+#headerNav {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vh;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: blue;
+    margin: 0 auto;
+    margin: 8px 8px 0px 8px ;
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerDiv1 {
+    background-color: red;
+    height: 60%;
+    width: 5em;
+    margin: 7px 7px 4px 7px;
+    flex-grow: 1;
+}
+
+.headerDiv2 {
+    background-color: red;
+    height: 60%;
+    width: 5em;
+    margin: 7px 7px 4px 7px;
+    flex-grow: 3;
+}
+
+nav {
+    background-color: orange;
+    margin: 0px 8px;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navDiv {
+    background-color: rgb(249, 206, 125);
+    height: 60%;
+    width: 100%;
+    margin: 7px;
+}
+
+#asideArticle {
+    background-color: black;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    display: flex;
+    height: 65vh;
+    padding: 2px;
+}
+
+aside {
+    background-color: red;
+    order: 1;
+    flex-grow: 2;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.asideDiv {
+    background-color: rgb(251, 251, 142);
+    height: 5vh;
+    margin: 0 auto;
+    margin: 11px 8px 0px 8px;
+}
+
+
+article {
+    background-color: rgb(44, 42, 96);
+    flex-grow: 4;
+    margin: 5px;
+}
+
+.cajaArticle {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 3px;
+    justify-content: center;
+}
+
+.articleDivs1 {
+    background-color: rgb(92, 75, 246);
+    width: 48%;
+    height: 22vh;
+    margin: 8px 8px 0px 8px;
+}
+
+.articleDiv2 {
+    background-color: rgb(147, 136, 246);
+    height: 5vh;
+    margin: 16px 8px 0px 8px;
+}
+
+footer {
+    background-color: gold;
+    border: solid 7px black;
+    margin-top: 5px;
+    height: 5vh;
+}
+
+@media (max-width:767px) {
+    #asideArticle {
+        background-color: gold;
+        flex-direction: column;
+    }
+
+    aside {
+        height: 20vh;
+    }
+    .asideDiv {
+        height: 4vh;
+    }
+    
+    article {
+        height: 55vh;
+    }
+    
+    .articleDivs1 {
+        background-color: rgb(92, 75, 246);
+        width: 48%;
+        height: 14vh;
+        margin: 8px 8px 0px 8px;
+    }
+    
+    .articleDiv2 {
+        background-color: rgb(147, 136, 246);
+        height: 5vh;
+        margin: 16px 8px 0px 8px;
+    }
+}
+
+@media (max-width:480px) {
+    #headerNav {
+        height: 30vh;
+    }    
+
+    #asideArticle {
+        border: solid 4px gold;
+        flex-direction: column;
+        
+    }
+
+    header {
+        background-color: blue;
+        flex-direction: column;
+        height: 60%;
+    }
+    
+    .headerDiv1 {
+        height: 10px;
+        width: 97%;
+        margin: 7px;
+        flex-grow: 1;
+    }
+
+    .headerDiv2 {
+        height: 10px;
+        width: 97%;
+        margin: 7px;
+        flex-grow: 1;
+    }
+
+    nav {
+        height: 20%;
+    }
+
+    aside {
+        height: 15vh;
+        background-color: rgb(249, 134, 62);
+        justify-content: center;
+    }
+
+    .asideDiv {
+        background-color: rgb(253, 193, 156);
+        height: 4vh;
+        margin: 0 auto;
+        margin: 4px 8px 4px 8px;
+    }
+    
+    article {
+        background-color: rgb(15, 72, 126);
+        height: 60vh;
+    }
+
+    .cajaArticle {
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 37%;
+        justify-content: space-evenly;
+    }
+
+    .articleDivs1 {
+        background-color: rgb(119, 172, 222);
+        width: 95%;
+        height: 5vh;
+    }
+
+    .articleDiv2 {
+        background-color: rgb(199, 223, 246);
+    }
+
+    footer {
+        background-color: rgb(249, 217, 111);
+        border: solid 12px black; 
+    }
+
+}
