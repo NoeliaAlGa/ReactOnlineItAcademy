@@ -1,0 +1,59 @@
+//custom variables
+$primary:#5265E1;
+$secondary:#FA5959;
+
+
+@media (min-width: 768px) {
+    .bg-Login {
+        background-color: $secondary;
+    }
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.tipoBold {
+    font-weight: bold;
+}
+
+.imagen {
+    width: 80vh;
+}
+
+.figura {
+    width: 120%;
+    height: 80%;
+    z-index: -1;
+    border-radius: 120px 0px 0px 120px;
+    margin: 30% 0% 0% 30%;
+}
+
+.imgMenu {
+    height: 20px;
+}
+
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        color: white;
+        border-bottom: $primary solid 1px;
+    }
+
+    .medidaDiv {
+        width: 100%;
+        height: 300px;
+    }
+    
+
+    .figura {
+        height: 65%;
+    }
+
+    .imagen {
+        width: 70vh;
+    }
+}
+
+//import bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
