@@ -54,7 +54,7 @@ body {
 
 .nav-link.active {
     width: 100%;
-    border-bottom: solid 3px #FA5959 !important;
+    border-bottom: solid 3px $secondary !important;
 }
 
 .medidaBotoTab {
@@ -92,6 +92,29 @@ body {
 
 .textFooter {
     font-size: 10pt !important;
+}
+
+.colorTextoHover:hover {
+    color: $secondary !important;
+    border: none;
+}
+
+.botonCoralHover:hover {
+    background-color: white !important;
+    color: $secondary !important;
+    border: solid 1px $secondary;
+}
+
+.botonPrimaryHover:hover {
+    background-color: white !important;
+    color: $primary !important;
+    border: solid 1px $primary;
+}
+
+.botonDarkHover:hover {
+    background-color: white !important;
+    color: black !important;
+    border: solid 1px black !important;
 }
 
 
